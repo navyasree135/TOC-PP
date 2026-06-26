@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Custom utility styles and theme configuration for Tailwind v4 */
+@theme {
+  --color-brand-cyan: #06b6d4;
+  --color-brand-purple: #a855f7;
+  --color-bg-darker: #090a0f;
+  --color-bg-dark: #0f111a;
+  --color-bg-card: rgba(22, 28, 45, 0.6);
+  --color-border-cyan: rgba(6, 182, 212, 0.4);
+  --color-border-purple: rgba(168, 85, 247, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 17, 26, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #090a0f;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+  background: rgba(15, 17, 26, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom glowing effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+}
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+.glow-text-cyan {
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
+}
+.glow-text-purple {
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
+}
